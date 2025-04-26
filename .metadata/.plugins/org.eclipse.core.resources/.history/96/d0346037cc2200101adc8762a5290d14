@@ -1,0 +1,16 @@
+package iteradores;
+import java.util.*;
+public class Ejercicio_2 {
+	public static void main(String[]args) {
+		/*Crea una lista de números enteros. 
+		 *Elimina usando un Iterator todos los números 
+		 *menores a 10 y muestra la lista resultante.*/
+		//50 Números (entre 1 y 50)
+		int min=1,max=50;
+		Scanner s=new Scanner(System.in);
+		ArrayList<Integer>Numeros=new ArrayList<>();
+		for(int i=0;i<50;i++) {
+			int num=Math.round(Math.random()*(max-min)-min);
+		}
+	}
+}

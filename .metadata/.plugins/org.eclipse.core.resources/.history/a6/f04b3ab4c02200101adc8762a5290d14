@@ -1,0 +1,21 @@
+package primitivos;
+
+public class Ejercicio_3 {
+
+	public static void main(String[] args) {
+		//Media de la cantidad de numeros introducidos
+		//por el Usuario
+		System.out.println("Cuantos numeros quieres introducir: ");
+		Scanner s=new Scanner(System.in);
+		int cantidad=s.nextInt();
+		int acumulador=0;
+		//sumamos todos los valores
+		for(int i=0;i<cantidad;i++) {
+			System.out.println("Introduce un número:");
+			int num=s.nextInt();
+			acumulador+=num;
+		}
+		//lo dividimos entre la cantidad introducida.
+		System.out.println("Media: "+(acumulador/cantidad));
+	}
+}
