@@ -1,0 +1,29 @@
+package primitivos;
+import java.util.*;
+public class Ejercicio_2 {
+	public static void main(String[] args) {
+		/*Realiza un ejercicio que pida números al usuario,
+		 *tantos como indique el usuario. Al final debe 
+		 *aparecer cuantos números positivos y negativos 
+		 *se han introducido*/
+		System.out.println("¿Cuantos numeros quieres introducir?");
+		Scanner s=new Scanner(System.in);
+		int cantidad=s.nextInt();
+		int contadorPos=0,contadorNeg=0,contador0=0;
+		for(int i=0;i<cantidad;i++) {
+			System.out.println("Introduce un número: ");
+			int num=s.nextInt();
+			//Verificar si es positivo o negativo
+			if(num>0) {
+				contadorPos++;
+			}else if(num<0) {
+				contadorNeg++;
+			}else if(num==0) {
+				contador0++;
+			}
+		}
+		System.out.println("Cantidad de Positivos: "+contadorPos);
+		System.out.println("Contador de Negativos: "+contadorNeg);
+		System.out.println("Coantador de 0: "+contador0);
+	}
+}

@@ -1,0 +1,28 @@
+package primitivos;
+import java.util.*;
+public class Ejercicio_5 {
+	public static void main(String[] args) {
+		//Max y min de numeros hasta el 0
+		boolean parar=false;
+		int max=Integer.MIN_VALUE,min=Integer.MAX_VALUE;
+		Scanner s=new Scanner(System.in);
+		//Si se introduce 0 se sale del bucle
+		while(!parar) {
+			System.out.println("Introduce un número:");
+			int num=s.nextInt();
+			if(num==0) {
+				parar=true;
+				break;
+			}else {
+				if(num>max) {
+					max=num;
+				}
+				if(num<min) {
+					min=num;
+				}
+			}
+		}
+		System.out.println("Mayor número: "+max);
+		System.out.println("Minimo número: "+min);
+	}
+}
